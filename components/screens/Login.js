@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { View, StyleSheet, Text } from 'react-native'
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
 
 
@@ -7,9 +7,10 @@ class Login extends Component {
   render() {
     return (
       <View>
-          <View>
+          <View style={styles.login}>
+            <Text>Sign In</Text>
             <FormLabel>Username:</FormLabel>
-            <FormInput onChangeText={console.log('typing')}/>    
+            <FormInput />    
             <FormLabel>Password:</FormLabel>
             <FormInput />
           </View>
@@ -17,5 +18,15 @@ class Login extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+    login: {
+        borderRadius: 4,
+        borderWidth: 1.0,
+        borderColor: 'black',
+        width: 250,
+        height: 300,
+    }
+})
 
 export default Login;
