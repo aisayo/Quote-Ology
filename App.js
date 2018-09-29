@@ -7,7 +7,7 @@ import HeaderContainer from './components/Header';
 class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View >
         <View>
           <HeaderContainer />
         </View>
@@ -18,14 +18,5 @@ class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'rgb(25, 117, 183)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
