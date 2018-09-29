@@ -22,7 +22,7 @@ class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#adf',
+    backgroundColor: 'rgb(25, 117, 183)',
     alignItems: 'center',
     justifyContent: 'center',
   },
