@@ -7,16 +7,19 @@ import HeaderContainer from './components/Header';
 class App extends React.Component {
   render() {
     return (
-      <View >
-        <View>
-          <HeaderContainer />
-        </View>
-        <View >
-          <Login />
-        </View>
+      <View style={styles.app}> //app is parent 
+          <HeaderContainer /> //child
+          <Login /> //child
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  app: {
+    flex: 1,
+    backgroundColor: 'rgb(166, 187, 221)'
+  },
+})
 
 export default App;

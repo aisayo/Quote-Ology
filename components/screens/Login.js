@@ -6,9 +6,9 @@ import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elemen
 class Login extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.logincontainer}>
           <View style={styles.login}>
-            <Text>Sign In</Text>
+            <Text style={styles.signin}>Sign In</Text>
             <FormLabel>Username:</FormLabel>
             <FormInput />    
             <FormLabel>Password:</FormLabel>
@@ -25,12 +25,21 @@ class Login extends Component {
 }
 
 const styles = StyleSheet.create({
+    logincontainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     login: {
-        borderRadius: 4,
+        borderRadius: 10,
         borderWidth: 1.0,
-        borderColor: 'black',
+        borderColor: 'white',
         width: 250,
         height: 300,
+    },
+    signin: {
+        fontWeight: 'bold',
+        fontSize: 20,
     }
 })
 
