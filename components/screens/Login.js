@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet, Text, Button } from 'react-native'
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
 
 
@@ -13,6 +13,11 @@ class Login extends Component {
             <FormInput />    
             <FormLabel>Password:</FormLabel>
             <FormInput />
+
+            <Button 
+                title='Login'
+                onPress={() => {alert('Login')}}
+            />
           </View>
       </View>
     )
