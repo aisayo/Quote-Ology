@@ -23,6 +23,11 @@ class Login extends Component {
                 onPress={() => {alert('Login')}}
                 style={styles.button}
             />
+
+            <Button 
+                title='Forgot Password?'
+                onPress={() => { navigate('ForgotPassword')}}
+            />
           </View>
 
             <Button 
