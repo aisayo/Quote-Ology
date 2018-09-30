@@ -20,7 +20,7 @@ class Login extends Component {
 
             <Button 
                 title='Sign In'
-                onPress={() => {alert('Login')}}
+                onPress={() => { console.log('signin') }}
                 style={styles.button}
             />
 

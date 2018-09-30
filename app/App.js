@@ -3,14 +3,14 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 import Login from './components/screens/Login';
 import HeaderContainer from './components/Header';
-import { SignedOut } from './navigator/Router';
+import { SignedIn } from './navigator/Router';
 
 class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent
       <ImageBackground source={require('./img/background1.png')} style={styles.backgroundimg}>
-        <SignedOut /> //child
+        <SignedIn /> //child
 
       </ImageBackground>
       </View>
