@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
     },
     signin: {
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: 50,
+        color: 'white',
     }
 })
 

@@ -8,7 +8,6 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent 
-          <HeaderContainer /> //child
           <Login /> //child
       </View>
     );
