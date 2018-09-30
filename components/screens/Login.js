@@ -9,10 +9,13 @@ class Login extends Component {
       <View style={styles.logincontainer}>
           <View style={styles.login}>
             <Text style={styles.signin}>Sign In</Text>
-            <FormLabel>Username:</FormLabel>
-            <FormInput />    
-            <FormLabel>Password:</FormLabel>
-            <FormInput />
+            <FormInput 
+                placeholder='Username...'
+            />    
+            <FormInput 
+                secureTextEntry={true} 
+                placeholder='Password...'
+            />
 
             <Button 
                 title='Login'
