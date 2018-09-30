@@ -9,10 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent
-      <ImageBackground source={require('./img/background1.png')} style={styles.backgroundimg}>
         <SignedIn /> //child
-
-      </ImageBackground>
       </View>
     );
   }
@@ -31,3 +28,6 @@ const styles = StyleSheet.create({
 })
 
 export default App;
+
+{/* <ImageBackground source={require('./img/background1.png')} style={styles.backgroundimg}>
+</ImageBackground> */}
