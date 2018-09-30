@@ -10,7 +10,7 @@ import { Header } from 'react-native-elements'
             <Header 
                 backgroundColor='rgb(25, 117, 183)'
                 leftComponent={{ icon: 'menu', color: '#fff' }}
-                centerComponent={{ text: 'Quote-Ology', style: { color: '#fff' } }}
+                centerComponent={{ text: this.props.text, style: { color: '#fff' } }}
                 rightComponent={{ icon: 'home', color: '#fff' }}
             />
           </View>
