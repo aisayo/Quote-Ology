@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text, Button } from 'react-native'
+import { View, StyleSheet, Text, Button, ImageBackground } from 'react-native'
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
 
 
@@ -8,7 +8,6 @@ class Login extends Component {
     return (
       <View style={styles.logincontainer}>
           <View style={styles.login}>
-            <Text style={styles.signin}>Sign In</Text>
             <FormInput 
                 placeholder='Username...'
             />    
@@ -18,7 +17,7 @@ class Login extends Component {
             />
 
             <Button 
-                title='Login'
+                title='Sign In'
                 onPress={() => {alert('Login')}}
             />
           </View>
@@ -40,10 +39,9 @@ const styles = StyleSheet.create({
         width: 250,
         height: 300,
     },
-    signin: {
-        fontWeight: 'bold',
-        fontSize: 50,
-        color: 'white',
+    backgroundimg: {
+        position: 'relative',
+        resizeMode: 'cover'
     }
 })
 
