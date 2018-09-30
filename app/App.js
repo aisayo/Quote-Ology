@@ -3,13 +3,15 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 import Login from './components/screens/Login';
 import HeaderContainer from './components/Header';
+import { SignedOut } from './Router';
 
 class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent
       <ImageBackground source={require('./img/background1.png')} style={styles.backgroundimg}>
-        <Login /> //child
+        <SignedOut /> //child
+
       </ImageBackground>
       </View>
     );
@@ -23,6 +25,8 @@ const styles = StyleSheet.create({
   },
   backgroundimg: {
     flex: 1,
+    position: 'relative',
+    // resizeMode: 'cover'
     }
 })
 
