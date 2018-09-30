@@ -5,6 +5,8 @@ import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elemen
 
 class Login extends Component {
   render() {
+      const navigate = this.props.navigation.navigate
+      console.log('props', navigate)
     return (
       <View style={styles.loginformcontainer}>
           <View style={styles.login}>
@@ -22,6 +24,11 @@ class Login extends Component {
                 style={styles.button}
             />
           </View>
+
+            <Button 
+                title='Sign Up'
+                onPress={() => { navigate('Signup') }}
+            />
       </View>
     )
   }

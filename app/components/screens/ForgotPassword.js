@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-export default class Register extends Component {
+export default class ForgotPassword extends Component {
   render() {
     return (
       <View>
-        <Text> Register </Text>
+        <Text> Forgot Password </Text>
       </View>
     )
   }

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 import Login from './components/screens/Login';
 import HeaderContainer from './components/Header';
-import { SignedOut } from './Router';
+import { SignedOut } from './navigator/Router';
 
 class App extends React.Component {
   render() {
