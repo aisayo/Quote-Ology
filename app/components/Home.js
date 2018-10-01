@@ -3,18 +3,15 @@ import { Text, View, StyleSheet } from 'react-native'
 
 import Header from './Header'
 import LikedQuotes from './LikedQuotes';
-import ProfilePic from './ProfilePic';
+import Welcome from './Welcome';
 
 export default class Home extends Component {
   render() {
     return (
         <View style={styles.homecontainer}>
             <Header text={'Home'}/>
-                <View style={styles.welcome}>
-                    <Text style={{fontSize: 20}}> Welcome User!</Text> 
-                </View>
-                <ProfilePic />
-                <LikedQuotes />
+            <Welcome username={'Aysan'}/>
+            <LikedQuotes />
         </View>
     )
   }
@@ -25,8 +22,4 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'rgb(255, 255, 255)',
     },
-    welcome: {
-        alignItems: 'center',
-        marginTop: 20,
-    }
 })
