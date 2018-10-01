@@ -11,7 +11,6 @@ import { Header } from 'react-native-elements'
                 backgroundColor='rgb(25, 117, 183)'
                 leftComponent={{ icon: 'menu', color: '#fff' }}
                 centerComponent={{ text: this.props.text, style: { color: '#fff' } }}
-                rightComponent={{ icon: 'home', color: '#fff' }}
             />
           </View>
           <View>
