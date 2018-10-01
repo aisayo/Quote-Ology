@@ -12,6 +12,9 @@ import Settings from '../components/Settings';
 export const SignedOut = createStackNavigator({
     Login: {
         screen: Login,
+        navigationOptions: {
+            header: null,
+        }
     },
     Signup: {
         screen: Register

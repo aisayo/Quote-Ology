@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Button, ImageBackground } from 'react-native'
-import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
+import { Text, View, StyleSheet, ImageBackground } from 'react-native'
 
 import LoginForm from '../../components/LoginForm'
+import SignUp from '../SignUp';
+import { QuoteOlogy } from '../QuoteOlogy';
 
 class Login extends Component {
   render() {
 
-      const navigate = this.props.navigation.navigate
+    const navigate = this.props.navigation.navigate
 
     return (
-      <View style={styles.loginformcontainer}>
-          <LoginForm />
-            <Button 
-                title='Sign Up'
-                onPress={() => { navigate('Signup') }}
-            />
-        </View>
+        <ImageBackground source={require('../../img/background1.png')} style={styles.backgroundimg}>
+            <QuoteOlogy />
+            <View style={styles.loginformcontainer}>
+                <LoginForm />
+                <SignUp />
+            </View>
+        </ImageBackground>
     )
   }
 }
@@ -26,10 +27,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: 25,
     },
     backgroundimg: {
+        flex: 1,
         position: 'relative',
-        resizeMode: 'cover'
     }
 })
 

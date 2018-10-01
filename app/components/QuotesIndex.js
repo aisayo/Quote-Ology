@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
 import SearchBar from '../components/common/SearchBar';
-import Header from '../components/common/Header';
+import { HeaderContainer } from '../components/common/Header';
 
 export default class QuotesIndex extends Component {
   render() {
     return (
       <View style={styles.quotescontainer}>
-        <Header text='Quotes' />
+        <HeaderContainer text='Quotes' />
         <SearchBar />
       </View>
     )
@@ -19,6 +19,5 @@ const styles = StyleSheet.create({
   quotescontainer: {
     flex: 1,
     backgroundColor: 'white'
-
   }
 })
