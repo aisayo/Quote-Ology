@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StatusBar } from 'react-native'
+import { View, StatusBar } from 'react-native'
 import { Header } from 'react-native-elements'
 
  class HeaderContainer extends Component {

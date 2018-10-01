@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text, Button, ImageBackground } from 'react-native'
+import { View, StyleSheet, Button, ImageBackground } from 'react-native'
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
 
 
