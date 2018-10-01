@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import SearchBar from './SearchBar';
-import Header from './Header';
+import SearchBar from '../components/common/SearchBar';
+import Header from '../components/common/Header';
 
 export default class QuotesIndex extends Component {
   render() {

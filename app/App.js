@@ -2,14 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 import Login from './components/screens/Login';
-import HeaderContainer from './components/Header';
-import { SignedIn } from './navigator/Router';
+import { SignedOut } from './navigator/Router';
 
 class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent
-        <SignedIn /> //child
+        <SignedOut /> //child
       </View>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Header from './Header';
+import Header from '../components/common/Header';
 
 export default class Settings extends Component {
   render() {
