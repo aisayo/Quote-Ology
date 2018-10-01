@@ -7,9 +7,7 @@ export default class Home extends Component {
     return (
         <View style={styles.homecontainer}>
             <Header text={'Home'}/>
-            <View style={ styles.text }>
-                <Text> Home </Text>
-            </View>
+
         </View>
     )
   }
@@ -18,10 +16,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
     homecontainer: {
         flex: 1,
+        backgroundColor: 'rgb(255, 255, 255)',
     },
-    text: {
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
 }
 )

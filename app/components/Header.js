@@ -8,16 +8,13 @@ import { Header } from 'react-native-elements'
       <View>
           <View>
             <Header 
-                backgroundColor='rgb(25, 117, 183)'
+                backgroundColor='rgb(175, 161, 181)'
                 leftComponent={{ icon: 'menu', color: '#fff' }}
                 centerComponent={{ text: this.props.text, style: { color: '#fff' } }}
             />
           </View>
           <View>
-          <StatusBar
-            backgroundColor="blue"
-            barStyle="light-content"
-        />
+            <StatusBar barStyle="light-content" />
           </View>
       </View>
     )
