@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
+import Header from './Header';
+
 export default class Settings extends Component {
   render() {
     return (
-      <View style={styles.text}>
-        <Text> Settings </Text>
+      <View style={styles.settingscontainer}>
+       <Header text='Settings'/>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-    text: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
-}
-)
+  settingscontainer: {
+    flex: 1,
+    backgroundColor: 'white'
+
+  }
+})

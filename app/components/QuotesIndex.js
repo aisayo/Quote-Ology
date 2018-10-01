@@ -20,10 +20,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white'
 
-},
-  text: {
-      justifyContent: 'center',
-      alignItems: 'center'
   }
-}
-)
+})
