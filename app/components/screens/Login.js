@@ -14,8 +14,8 @@ class Login extends Component {
         <ImageBackground source={require('../../img/background1.png')} style={styles.backgroundimg}>
             <QuoteOlogy />
             <View style={styles.loginformcontainer}>
-                <LoginForm />
-                <SignUp />
+                <LoginForm navigate={navigate}/>
+                <SignUp navigate={navigate}/>
             </View>
         </ImageBackground>
     )

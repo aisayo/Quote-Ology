@@ -1,0 +1,56 @@
+import React, { Component } from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+import { FormInput, Button } from 'react-native-elements';
+
+export default class LoginForm extends Component {
+  render() {
+    return (
+        <View style={styles.login}>
+
+            <FormInput 
+                placeholder='Username...'
+                containerStyle={styles.container}
+            />    
+            <FormInput 
+                secureTextEntry={true} 
+                placeholder='Password...'
+                containerStyle={styles.container}
+            />
+
+            <Button 
+                title='Sign In'
+                onPress={() => { console.log('signin') }}
+                transparent={true}
+                textStyle={{ fontSize: 30 }}
+            />
+
+            <Button 
+                title='Forgot Password?'
+                onPress={() => { this.props.navigate('ForgotPassword')}}
+                transparent={true}
+                textStyle={{ fontSize: 15 }}
+            />
+
+        </View>
+    )
+  }
+}
+
+const styles = StyleSheet.create({
+    login: {
+        justifyContent: 'center',
+        borderRadius: 10,
+        borderWidth: 2.5,
+        borderLeftColor: 'rgb(131, 7, 247)',
+        borderRightColor: 'rgb(247, 7, 171)',
+        borderBottomColor: 'rgb(239, 21, 119)',
+        borderTopColor: 'rgb(207, 13, 229)',
+        width: 250,
+        height: 250,
+        backgroundColor: 'rgba(228, 210, 210, 0.6)'
+    },
+    container: {
+        marginTop: 10,
+        marginBottom: 10,
+    }
+})
