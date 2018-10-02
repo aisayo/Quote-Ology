@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, ImageBackground } from 'react-native'
 
 import LoginForm from '../../components/LoginForm'
-import SignUp from '../SignUp';
+import {SignUp} from '../SignUp';
 import { QuoteOlogy } from '../QuoteOlogy';
 
 class Login extends Component {

@@ -2,13 +2,10 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { Button } from 'react-native-elements'
 
-export default class SignUp extends Component {
-  render() {
-    console.log('signup', this.props)
-
+export const SignUp = () =>{
     return (
       <View >
-          <Text style={styles.text}>Don't have an account?</Text>
+        <Text style={styles.text}>Don't have an account?</Text>
         <Button 
                 title='Sign Up'
                 onPress={() => { this.props.navigate('Signup') }}
@@ -17,7 +14,6 @@ export default class SignUp extends Component {
         />
       </View>
     )
-  }
 }
 
 const styles = StyleSheet.create({
