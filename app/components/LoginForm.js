@@ -3,6 +3,24 @@ import { Text, View, StyleSheet } from 'react-native'
 import { FormInput, Button } from 'react-native-elements';
 
 export default class LoginForm extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            username: '',
+            password: ''
+        }
+    }
+
+    handleUsernameInput = (username) => {
+        this.setState({ username})
+    }
+
+    handlePasswordInput = (password) => {
+        this.setState({ password })
+        console.log('password', password)
+    }
+
   render() {
     return (
         <View style={styles.login}>
@@ -10,11 +28,13 @@ export default class LoginForm extends Component {
             <FormInput 
                 placeholder='Username...'
                 containerStyle={styles.container}
+                onChangeText={this.handleUsernameInput}
             />    
             <FormInput 
                 secureTextEntry={true} 
                 placeholder='Password...'
                 containerStyle={styles.container}
+                onChangeText={this.handlePasswordInput}
             />
 
             <Button 

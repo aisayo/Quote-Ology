@@ -17,7 +17,7 @@ export const SignedOut = createStackNavigator({
         }
     },
     Signup: {
-        screen: Register
+        screen: Register,
     },
     ForgotPassword: {
         screen: ForgotPassword

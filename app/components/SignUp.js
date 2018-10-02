@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { Button } from 'react-native-elements'
 
-export const SignUp = () =>{
+export const SignUp = (props) =>{
     return (
       <View >
         <Text style={styles.text}>Don't have an account?</Text>
         <Button 
                 title='Sign Up'
-                onPress={() => { this.props.navigate('Signup') }}
+                onPress={() => { props.navigate('Signup') }}
                 transparent={true}
                 textStyle={{ fontSize: 30 }}
         />
