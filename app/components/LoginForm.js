@@ -18,7 +18,6 @@ export default class LoginForm extends Component {
 
     handlePasswordInput = (password) => {
         this.setState({ password })
-        console.log('password', password)
     }
 
   render() {
@@ -34,7 +33,7 @@ export default class LoginForm extends Component {
                 secureTextEntry={true} 
                 placeholder='Password...'
                 containerStyle={styles.container}
-                onChangeText={this.handlePasswordInput}
+                onChangeText={this.handleUsernameInput}
             />
 
             <Button 

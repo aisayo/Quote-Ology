@@ -18,9 +18,16 @@ export const SignedOut = createStackNavigator({
     },
     Signup: {
         screen: Register,
+        navigationOptions: {
+            title: 'Register',
+            headerColor: 'black'
+        }
     },
     ForgotPassword: {
-        screen: ForgotPassword
+        screen: ForgotPassword,
+        navigationOptions: {
+            title: 'Reset Password'
+        }
     }
 })
 
