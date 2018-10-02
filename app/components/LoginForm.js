@@ -13,7 +13,7 @@ export default class LoginForm extends Component {
     }
 
     handleUsernameInput = (username) => {
-        this.setState({ username})
+        this.setState({ username })
     }
 
     handlePasswordInput = (password) => {
