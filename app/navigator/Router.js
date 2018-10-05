@@ -27,7 +27,7 @@ export const SignedOut = createStackNavigator({
     ForgotPassword: {
         screen: ForgotPassword,
         navigationOptions: {
-            headerTitle: 'Reset Password'
+            headerTitle: 'Reset Your Password'
         },
     }
 })

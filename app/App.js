@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, StatusBar } from 'react-native';
 
-import Login from './components/screens/Login';
 import { SignedOut } from './navigator/Router';
 
 class App extends React.Component {
@@ -18,12 +17,7 @@ class App extends React.Component {
 const styles = StyleSheet.create({
   app: {
     flex: 1,
-    backgroundColor: 'rgb(166, 187, 221)'
-  },
-  backgroundimg: {
-    flex: 1,
-    position: 'relative',
-    }
+  }
 })
 
 export default App
