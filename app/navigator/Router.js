@@ -22,24 +22,22 @@ export const SignedOut = createStackNavigator({
         screen: SignupForm,
         navigationOptions: {
             headerTitle: 'SignUp',
+            headerStyle: {
+                backgroundColor: 'rgb(252, 204, 248)'
+            }
         }
     },
     ForgotPassword: {
         screen: ForgotPassword,
         navigationOptions: {
-            headerTitle: 'Reset Your Password'
+            header: null,
         },
-    }
+    },
 })
 
 export const SignedIn = createMaterialBottomTabNavigator({
     Home: {
         screen: Home,
-        navigationOptions: {
-            // tabBarIcon: ({ tintColor, focused }) => (
-            //     <Icon size={30} name="heart" style={{ color: tintColor }} />
-            //   )
-        }
     },
     Quotes: {
         screen: Quotes
