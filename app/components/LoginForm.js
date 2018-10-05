@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { FormInput, Button } from 'react-native-elements';
 
 export default class LoginForm extends Component {
@@ -26,13 +26,13 @@ export default class LoginForm extends Component {
 
             <FormInput 
                 placeholder='Username...'
-                containerStyle={styles.container}
+                containerStyle={styles.inputcontainer}
                 onChangeText={this.handleUsernameInput}
             />    
             <FormInput 
                 secureTextEntry={true} 
                 placeholder='Password...'
-                containerStyle={styles.container}
+                containerStyle={styles.inputcontainer}
                 onChangeText={this.handleUsernameInput}
             />
 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         height: 250,
         backgroundColor: 'rgba(228, 210, 210, 0.6)'
     },
-    container: {
+    inputcontainer: {
         marginTop: 10,
         marginBottom: 10,
         backgroundColor: 'rgba(255, 255, 255, 0.55)',
