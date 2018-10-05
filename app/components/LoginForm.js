@@ -71,5 +71,6 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 10,
         marginBottom: 10,
+        backgroundColor: 'rgba(255, 255, 255, 0.40)',
     }
 })

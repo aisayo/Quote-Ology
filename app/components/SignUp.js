@@ -9,7 +9,7 @@ export default class SignUp extends Component {
               <Text style={styles.text}>Don't have an account?</Text>
               <Button 
                       title='Sign Up'
-                      onPress={() => { props.navigate('Signup') }}
+                      onPress={() => { this.props.navigate('Signup') }}
                       transparent={true}
                       textStyle={{ fontSize: 30 }}
               />
