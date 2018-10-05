@@ -1,5 +1,6 @@
 import React from 'react-native';
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
+import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 
 import Login from '../components/screens/Login';
 import Register from '../components/screens/Register';
@@ -30,9 +31,9 @@ export const SignedOut = createStackNavigator({
     }
 })
 
-export const SignedIn = createBottomTabNavigator({
+export const SignedIn = createMaterialBottomTabNavigator({
     Home: {
-        screen: Home
+        screen: Home,
     },
     Quotes: {
         screen: QuotesIndex

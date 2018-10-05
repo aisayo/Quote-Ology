@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, StatusBar } from 'react-native';
 
 import Login from './components/screens/Login';
-import { SignedOut } from './navigator/Router';
+import { SignedIn } from './navigator/Router';
 
 class App extends React.Component {
   render() {
     return (
       <View style={styles.app}> //app is parent
         <StatusBar barStyle="light-content" />
-        <SignedOut /> //child
+        <SignedIn /> //child
       </View>
     );
   }
@@ -26,5 +26,5 @@ const styles = StyleSheet.create({
     }
 })
 
-export default App;
+export default App
 
