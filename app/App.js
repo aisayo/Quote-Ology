@@ -10,15 +10,15 @@ class App extends React.Component {
         <StatusBar barStyle="light-content" />
         <SignedOut /> //child
       </View>
-    );
-  }
-}
+    )
+  };
+};
 
 const styles = StyleSheet.create({
   app: {
     flex: 1,
   }
-})
+});
 
-export default App
+export default App;
 

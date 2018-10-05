@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, ImageBackground } from 'react-native'
+import { View, StyleSheet, ImageBackground } from 'react-native'
 
+import { Logo } from '../Logo';
 import LoginForm from '../../components/LoginForm'
 import SignUp from '../Signup';
-import { Logo } from '../Logo';
+
 
 class Login extends Component {
   render() {
@@ -29,7 +30,6 @@ const styles = StyleSheet.create({
     },
     backgroundimg: {
         flex: 1,
-        position: 'relative',
     }
 })
 
