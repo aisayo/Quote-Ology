@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
-export const QuoteOlogy = () => {
+export const Logo = () => {
     return (
         <View>
             <Text style={styles.logo}> Quote-Ology </Text>

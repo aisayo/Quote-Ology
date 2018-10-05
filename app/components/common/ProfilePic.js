@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 
-export default class ProfilePic extends Component {
-  render() {
+export const ProfilePic = () => {
     return (
       <View style={styles.profilepicture}>
         <Text> Profile Pic </Text>
       </View>
     )
-  }
 }
 
 const styles = StyleSheet.create({

@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, ImageBackground } from 'react-native'
 
 import LoginForm from '../../components/LoginForm'
-import {SignUp} from '../SignUp';
-import { QuoteOlogy } from '../QuoteOlogy';
+import SignUp from '../Signup';
+import { Logo } from '../Logo';
 
 class Login extends Component {
   render() {
@@ -11,8 +11,8 @@ class Login extends Component {
     const navigate = this.props.navigation.navigate
 
     return (
-        <ImageBackground source={require('../../img/background1.png')} style={styles.backgroundimg}>
-            <QuoteOlogy />
+        <ImageBackground source={require('../../../assets/img/background1.png')} style={styles.backgroundimg}>
+            <Logo />
             <View style={styles.loginformcontainer}>
                 <LoginForm navigate={navigate}/>
                 <SignUp navigate={navigate}/>

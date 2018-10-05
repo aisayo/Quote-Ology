@@ -1,9 +1,10 @@
 import React from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
+import { Icon } from 'react-native-vector-icons/Ionicons';
 
 import Login from '../components/screens/Login';
-import Register from '../components/screens/Register';
+import SignupForm from '../components/screens/SignupForm';
 import ForgotPassword from '../components/screens/ForgotPassword'
 import Home from '../components/Home';
 import QuotesIndex from '../components/QuotesIndex';
@@ -18,9 +19,9 @@ export const SignedOut = createStackNavigator({
         }
     },
     Signup: {
-        screen: Register,
+        screen: SignupForm,
         navigationOptions: {
-            headerTitle: 'Register',
+            headerTitle: 'SignUp',
         }
     },
     ForgotPassword: {
@@ -34,6 +35,11 @@ export const SignedOut = createStackNavigator({
 export const SignedIn = createMaterialBottomTabNavigator({
     Home: {
         screen: Home,
+        navigationOptions: {
+            // tabBarIcon: ({ tintColor, focused }) => (
+            //     <Icon size={30} name="heart" style={{ color: tintColor }} />
+            //   )
+        }
     },
     Quotes: {
         screen: QuotesIndex
@@ -43,5 +49,5 @@ export const SignedIn = createMaterialBottomTabNavigator({
     }
 }, { 
         activeColor: 'white',
-        barStyle: { backgroundColor: 'rgb(175, 161, 181)', paddingBottom: 10 },
+        barStyle: { backgroundColor: 'rgb(175, 161, 181)', paddingBottom: 10 },    
 })
