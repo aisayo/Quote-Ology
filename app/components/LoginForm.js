@@ -28,7 +28,8 @@ export default class LoginForm extends Component {
                 placeholder='Username...'
                 containerStyle={styles.inputcontainer}
                 onChangeText={this.handleUsernameInput}
-            />    
+            />   
+             
             <FormInput 
                 secureTextEntry={true} 
                 placeholder='Password...'
