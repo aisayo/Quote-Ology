@@ -41,4 +41,7 @@ export const SignedIn = createMaterialBottomTabNavigator({
     Settings: {
         screen: Settings
     }
+}, { 
+        activeColor: 'white',
+        barStyle: { backgroundColor: 'rgb(175, 161, 181)', paddingBottom: 10 },
 })

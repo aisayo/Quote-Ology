@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Header from '../components/common/Header';
+import { Header } from '../components/common/Header';
 
 export default class Settings extends Component {
   render() {
     return (
       <View style={styles.settingscontainer}>
-       <Header text='Settings'/>
+        {/* <View>
+        <Header />
+        </View> */}
       </View>
     )
   }
