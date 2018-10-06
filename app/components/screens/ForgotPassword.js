@@ -12,7 +12,9 @@ export default class ForgotPassword extends Component {
           <FormInput placeholder="Email..." inputStyle={styles.input}/>
           <Button 
               title='Find My Acct.'
-              outline='true'/>
+              outline={true}
+              buttonStyle={styles.button}
+              />
         </View>
         </View>
     )
@@ -45,5 +47,10 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: 350,
     height: 500,
+  },
+  button: {
+    marginTop: 10,
+    width: 150,
+    alignSelf: 'center'
   }
 })
