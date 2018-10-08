@@ -1,23 +1,18 @@
-import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet } from 'react-native'
+import React from 'react'
+import { Image, StyleSheet } from 'react-native'
 
-export const ProfilePic = () => {
-    return (
-      <View style={styles.profilepicture}>
-        <Text> Profile Pic </Text>
-      </View>
-    )
+export const ProfilePic = (props) => {
+
+    const { picStyle } = styles;
+
+    return  <Image style={picStyle} source={props.src} />
 }
 
 const styles = StyleSheet.create({
-    profilepicture: {
-        justifyContent: 'center',
-        alignSelf: 'center',
+    picStyle: {
         borderRadius: 50,
-        borderColor: 'black',
-        borderWidth: 1,
-        width: 50,
-        height: 50,
+        width: 100,
+        height: 100,
         marginTop: 20,
         marginLeft: 20,
     }
