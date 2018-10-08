@@ -8,7 +8,6 @@ export const Logo = (props) => {
 const styles = StyleSheet.create({
     logoStyle: {
         alignSelf: 'center',
-        justifyContent: 'center',
         color: 'white',
         fontSize: 75,
         fontFamily: 'Marker Felt',
