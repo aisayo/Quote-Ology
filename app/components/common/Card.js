@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     containerStyle: {
         borderWidth: 1,
         borderRadius: 2,
-        borderColor: 'red',
+        borderColor: 'gray',
         borderBottomWidth: 0,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         marginLeft: 5,
         marginRight: 5,
         height: 100,
-        width: 100,
+        width: 350,
+        alignSelf: 'center'
     }
 })
