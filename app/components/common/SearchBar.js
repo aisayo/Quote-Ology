@@ -7,12 +7,11 @@ export default class SearchBar extends Component {
   
   render() {
 
-    const { searchBarStyle, textStyle, formInputStyle } = styles;
+    const { searchBarStyle, formInputStyle } = styles;
 
     return (
       <View style={searchBarStyle}>
-        <Text style={textStyle}>In a mood?</Text>
-        <FormInput placeholder='Search here...' containerStyle={formInputStyle} />
+        <FormInput placeholder='In a mood? Try searching for something...' containerStyle={formInputStyle} />
       </View>
     )
   }
@@ -28,11 +27,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     borderWidth: .5,
     borderColor: 'gray',
-  },
-  textStyle: {
-    marginLeft: 5,
-    fontSize: 20,
-    color: 'gray',
+    borderRadius: 5
   },
   formInputStyle: {
     marginRight: 0,
