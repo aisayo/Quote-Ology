@@ -14,7 +14,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   headerStyle: {
-    backgroundColor: 'rgb(175, 161, 181)',
+    backgroundColor: 'rgb(252, 204, 248)',
     paddingTop: 35,
     paddingBottom: 15,
   },

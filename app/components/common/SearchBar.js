@@ -4,11 +4,15 @@ import { FormInput } from 'react-native-elements'
 
 
 export default class SearchBar extends Component {
+  
   render() {
+
+    const { searchBarStyle, textStyle, formInputStyle } = styles;
+
     return (
-      <View style={styles.searchBarStyle}>
-        <Text style={styles.textStyle}>In a mood?</Text>
-        <FormInput placeholder='Search here...' containerStyle={styles.formInputStyle}/>
+      <View style={searchBarStyle}>
+        <Text style={textStyle}>In a mood?</Text>
+        <FormInput placeholder='Search here...' containerStyle={formInputStyle} />
       </View>
     )
   }
@@ -33,7 +37,7 @@ const styles = StyleSheet.create({
   formInputStyle: {
     marginRight: 0,
     width: 250,
-    borderBottomWidth: 0
+    borderBottomWidth: 0,
   }
 })
 
