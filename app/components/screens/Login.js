@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, ImageBackground } from 'react-native'
 
-import { Logo } from '../Logo';
+import { Logo } from '../common/Logo';
 import LoginForm from '../../components/LoginForm'
 import SignUp from '../Signup';
 
@@ -11,7 +11,7 @@ class Login extends Component {
     const navigate = this.props.navigation.navigate
     return (
         <ImageBackground source={require('../../../assets/img/background1.png')} style={styles.backgroundimg}>
-            <Logo />
+            <Logo logo='Quote-Ology'/>
             <View style={styles.loginformcontainer}>
                 <LoginForm navigate={navigate}/>
                 <SignUp navigate={navigate}/>

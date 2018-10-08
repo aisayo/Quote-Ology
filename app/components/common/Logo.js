@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
-export const Logo = () => {
+export const Logo = (props) => {
     return (
         <View>
-            <Text style={styles.logo}> Quote-Ology </Text>
+            <Text style={styles.logo}> { props.logo } </Text>
         </View>
     )
 }

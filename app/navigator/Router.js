@@ -6,7 +6,7 @@ import { Icon } from 'react-native-vector-icons/Ionicons';
 import Login from '../components/screens/Login';
 import SignupForm from '../components/screens/SignupForm';
 import ForgotPassword from '../components/screens/ForgotPassword'
-import Home from '../components/screens/Home';
+import { Home } from '../components/screens/Home';
 import Quotes from '../components/screens/Quotes';
 import Settings from '../components/Settings';
 
