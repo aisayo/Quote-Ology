@@ -14,7 +14,6 @@ export default class QuotesList extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
       </View>
     )
   }
