@@ -1,16 +1,12 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, StyleSheet } from 'react-native'
 
 export const Logo = (props) => {
-    return (
-        <View>
-            <Text style={styles.logo}> { props.logo } </Text>
-        </View>
-    )
+    return <Text style={styles.logoStyle}>{props.logo}</Text>
 }
 
 const styles = StyleSheet.create({
-    logo: {
+    logoStyle: {
         alignSelf: 'center',
         justifyContent: 'center',
         color: 'white',
