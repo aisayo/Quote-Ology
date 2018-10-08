@@ -53,10 +53,15 @@ export const SignedIn = createMaterialBottomTabNavigator({
                 <Icon name='ios-quote' color={tintColor} size={30} />
             )
         }
-
     },
     Settings: {
-        screen: Settings
+        screen: Settings,
+        navigationOptions: {
+            tabBarLabel: 'Settings',
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-construct' color={tintColor} size={30} />
+            )
+        }
     }
 }, { 
         activeColor: 'white',
