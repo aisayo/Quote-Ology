@@ -7,9 +7,7 @@ export default class Settings extends Component {
   render() {
     return (
       <View style={styles.settingscontainer}>
-        {/* <View>
-        <Header />
-        </View> */}
+        <Header text='Settings' />
       </View>
     )
   }
