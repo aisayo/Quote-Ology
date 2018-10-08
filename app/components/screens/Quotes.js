@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native'
 
 import SearchBar from '../common/SearchBar';
 import { Header } from '../common/Header';
+import QuotesList from '../../components/QuotesList';
 
 export default class Quotes extends Component {
   render() {
@@ -10,6 +11,7 @@ export default class Quotes extends Component {
       <View style={styles.quotescontainer}>
         <Header text='Quotes' />
         <SearchBar />
+        <QuotesList />
       </View>
     )
   }
