@@ -3,6 +3,7 @@ import { Text, StyleSheet } from 'react-native';
 
 
 export const Welcome = (props) => {
+    
     return(
         <Text style={styles.textStyle}>Welcome, {props.name}!</Text>
         )

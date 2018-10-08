@@ -4,8 +4,10 @@ import { View, StyleSheet } from 'react-native'
 import SearchBar from '../common/SearchBar';
 import { Header } from '../common/Header';
 import QuotesList from '../../components/QuotesList';
+import { Card } from '../common/Card';
 
 export default class Quotes extends Component {
+
   render() {
     return (
       <View style={styles.quotescontainer}>

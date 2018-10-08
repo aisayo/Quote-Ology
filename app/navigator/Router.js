@@ -1,7 +1,7 @@
 import React from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
-import { Icon } from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Login from '../components/screens/Login';
 import SignupForm from '../components/screens/SignupForm';
@@ -38,6 +38,11 @@ export const SignedOut = createStackNavigator({
 export const SignedIn = createMaterialBottomTabNavigator({
     Home: {
         screen: Home,
+        // navigationOptions: {
+        //     tabBarIcon: ({ tintColor, focused }) => {
+        //         return <Ionicons name="home" size={30} color={tintColor}/>
+        //     }
+        // }
     },
     Quotes: {
         screen: Quotes
