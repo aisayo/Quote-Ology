@@ -1,28 +1,26 @@
 import React from 'react'
-import { View, StatusBar } from 'react-native'
-import { Header } from 'react-native-elements'
+import { View, Text, StyleSheet } from 'react-native'
 
- export const HeaderContainer = (props) => {
+ export const Header = (props) => {
+
+  const { headerStyle, textStyle } = styles;
+
   return (
-    <View>
-
-        <View>
-          <Header 
-              backgroundColor='rgb(175, 161, 181)'
-              centerComponent={
-                { text: props.text, 
-                  style: { color: '#fff', fontSize: 20 } 
-                }
-              }
-          />
-        </View>
-
-        <View>
-          <StatusBar barStyle="light-content" />
-        </View>
-        
+    <View style={headerStyle}>
+      <Text style={textStyle}>{props.text}</Text> 
     </View>
   )
-
  }
 
+const styles = StyleSheet.create({
+  headerStyle: {
+    backgroundColor: 'rgb(175, 161, 181)',
+    paddingTop: 35,
+    paddingBottom: 15,
+  },
+  textStyle: {
+    alignSelf: 'center',
+    color: 'white',
+    fontSize: 25,
+  }
+})

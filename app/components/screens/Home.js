@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {View, StyleSheet } from 'react-native'
 
-import { HeaderContainer } from '../common/Header'
+import {Header} from '../common/Header';
 import LikedQuotes from '../LikedQuotes';
 import Welcome from '../common/Welcome';
 
@@ -9,8 +9,8 @@ export default class Home extends Component {
   render() {
     return (
         <View style={styles.homecontainer}>
-            <HeaderContainer text={'Home'}/>
-            <Welcome username={'Aysan'}/>
+            <Header text={'Home'}/>
+            {/* <Welcome username={'Aysan'}/> */}
             <LikedQuotes />
         </View>
     )
