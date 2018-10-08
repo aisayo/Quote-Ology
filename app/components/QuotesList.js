@@ -1,6 +1,5 @@
 import React from 'react'
 import { View } from 'react-native'
-import Quotes from './screens/Quotes';
 
 const QuotesList = (props) => {  
 
@@ -8,7 +7,6 @@ const QuotesList = (props) => {
       <View>
         {props.renderQuotes}
       </View>
-      
     )
 }
 

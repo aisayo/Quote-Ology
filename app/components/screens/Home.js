@@ -5,17 +5,18 @@ import { Header } from '../common/Header';
 import { ProfilePic } from '../common/ProfilePic';
 import { Welcome } from '../common/Welcome';
 
-export const Home = () => {
-
-    return (
-        <View >
-            <Header text={'Home'}/>
-            <View style={styles.profileStyle}>
-                <ProfilePic src={require('../../../assets/img/profileimg1.jpg')}/>
-                <Welcome name={'Aysan Isayo'}/>
+export default class Home extends Component {
+    render(){
+        return(
+            <View >
+                <Header text={'Home'}/>
+                <View style={styles.profileStyle}>
+                    <ProfilePic src={require('../../../assets/img/profileimg1.jpg')}/>
+                    <Welcome name={'Aysan Isayo'}/>
+                </View>
             </View>
-        </View>
-    )
+        )
+    }
 }
 
 const styles = StyleSheet.create({

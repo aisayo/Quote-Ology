@@ -1,12 +1,12 @@
-import React from 'react-native';
+import React from 'react';
 import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import Login from '../components/screens/Login';
 import SignupForm from '../components/screens/SignupForm';
 import ForgotPassword from '../components/screens/ForgotPassword'
-import { Home } from '../components/screens/Home';
+import Home from '../components/screens/Home';
 import Quotes from '../components/screens/Quotes';
 import Settings from '../components/Settings';
 
@@ -38,14 +38,22 @@ export const SignedOut = createStackNavigator({
 export const SignedIn = createMaterialBottomTabNavigator({
     Home: {
         screen: Home,
-        // navigationOptions: {
-        //     tabBarIcon: ({ tintColor, focused }) => {
-        //         return <Ionicons name="home" size={30} color={tintColor}/>
-        //     }
-        // }
+        navigationOptions: {
+            tabBarLabel: 'Home',
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-home' color={tintColor} size={30} />
+            )
+        }
     },
     Quotes: {
-        screen: Quotes
+        screen: Quotes,
+        navigationOptions: {
+            tabBarLabel: 'Quotes',
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-quote' color={tintColor} size={30} />
+            )
+        }
+
     },
     Settings: {
         screen: Settings
