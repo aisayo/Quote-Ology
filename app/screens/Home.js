@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 
-import { Header } from '../common/Header';
-import { ProfilePic } from '../common/ProfilePic';
-import { Welcome } from '../common/Welcome';
+import { Header } from '../components/common/Header';
+import { ProfilePic } from '../components/common/ProfilePic';
+import { Welcome } from '../components/common/Welcome';
 
 export default class Home extends Component {
     render(){

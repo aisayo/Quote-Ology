@@ -3,12 +3,12 @@ import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import Login from '../components/screens/Login';
-import SignupForm from '../components/screens/SignupForm';
-import ForgotPassword from '../components/screens/ForgotPassword'
-import Home from '../components/screens/Home';
-import Quotes from '../components/screens/Quotes';
-import Settings from '../components/Settings';
+import Login from '../screens/Login';
+import SignupForm from '../screens/SignupForm';
+import ForgotPassword from '../screens/ForgotPassword'
+import Home from '../screens/Home';
+import Quotes from '../screens/Quotes';
+import Settings from '../Settings';
 
 
 export const SignedOut = createStackNavigator({

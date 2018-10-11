@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, ImageBackground } from 'react-native'
 
-import { Logo } from '../common/Logo';
-import LoginForm from '../../components/LoginForm'
-import SignUp from '../Signup';
+import { Logo } from '../components/common/Logo';
+import LoginForm from '../components/LoginForm'
+import SignUp from '../components/Signup';
 
 
 class Login extends Component {
