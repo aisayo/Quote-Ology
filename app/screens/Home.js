@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 
-import { Header } from '../components/common/Header';
-import { ProfilePic } from '../components/common/ProfilePic';
-import { Welcome } from '../components/common/Welcome';
+import { Header, ProfilePic, Welcome } from '../components/common';
 
 export default class Home extends Component {
     render(){
@@ -11,7 +9,7 @@ export default class Home extends Component {
             <View >
                 <Header text={'Home'}/>
                 <View style={styles.profileStyle}>
-                    <ProfilePic src={require('../../../assets/img/profileimg1.jpg')}/>
+                    <ProfilePic src={require('../../assets/img/profileimg1.jpg')}/>
                     <Welcome name={'Aysan Isayo'}/>
                 </View>
             </View>

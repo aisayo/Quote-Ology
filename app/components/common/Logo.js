@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 
-export const Logo = (props) => {
+const Logo = (props) => {
     return <Text style={styles.logoStyle}>{props.logo}</Text>
 }
 
@@ -16,3 +16,5 @@ const styles = StyleSheet.create({
         marginBottom: -75,
     }
 })
+
+export { Logo };

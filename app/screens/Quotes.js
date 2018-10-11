@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 
-import SearchBar from '../components/common/SearchBar';
-import { Header } from '../components/common/Header';
+import { SearchBar, Header, Card } from '../components/common';
 import QuotesList from '../components/QuotesList';
-import { Card } from '../components/common/Card';
 
 export default class Quotes extends Component {
 

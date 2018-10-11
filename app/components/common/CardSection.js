@@ -20,4 +20,4 @@ const styles = {
         position: 'relative'
     }
 }
-export default CardItem;
+export { CardItem };

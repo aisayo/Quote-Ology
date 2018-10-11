@@ -8,7 +8,7 @@ import SignupForm from '../screens/SignupForm';
 import ForgotPassword from '../screens/ForgotPassword'
 import Home from '../screens/Home';
 import Quotes from '../screens/Quotes';
-import Settings from '../Settings';
+import Settings from '../components/Settings';
 
 
 export const SignedOut = createStackNavigator({

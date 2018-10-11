@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, StyleSheet } from 'react-native'
 
-export const ProfilePic = (props) => {
+const ProfilePic = (props) => {
 
     const { picStyle } = styles;
 
@@ -17,3 +17,5 @@ const styles = StyleSheet.create({
         marginLeft: 20,
     }
 })
+
+export { ProfilePic };

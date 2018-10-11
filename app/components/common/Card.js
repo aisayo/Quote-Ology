@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native'
 
 
-export const Card = (props) => {
+const Card = (props) => {
     return (
         <View style={styles.containerStyle}>
             { props.children }
@@ -29,3 +29,5 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
     }
 })
+
+export { Card };

@@ -10,7 +10,7 @@ class Login extends Component {
   render() {
     const navigate = this.props.navigation.navigate
     return (
-        <ImageBackground source={require('../../../assets/img/background1.png')} style={styles.backgroundimg}>
+        <ImageBackground source={require('../../assets/img/background1.png')} style={styles.backgroundimg}>
             <Logo logo='Quote-Ology'/>
             <View style={styles.loginformcontainer}>
                 <LoginForm navigate={navigate}/>

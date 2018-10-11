@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
 
-export const Welcome = (props) => {
+const Welcome = (props) => {
     
     return(
         <Text style={styles.textStyle}>Welcome, {props.name}!</Text>
@@ -18,4 +18,6 @@ const styles = StyleSheet.create({
         color: 'gray'
     }
 })
+
+export { Welcome };
 
