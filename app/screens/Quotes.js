@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 
-import { SearchBar, Header, Card } from '../components/common';
+import { Header, Card } from '../components/common';
 import QuotesList from '../components/QuotesList';
+import SearchBar from '../components/common/SearchBar';
 
-export default class Quotes extends Component {
+class Quotes extends Component {
 
   state = {
     quotes: []
@@ -35,3 +36,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   }
 })
+
+export default Quotes;
